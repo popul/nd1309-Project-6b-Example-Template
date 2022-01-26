@@ -14,7 +14,6 @@
     "@truffle/hdwallet-provider": "^2.0.1",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^5.2.7",
-    "lite-server": "2.4.0",
     "style-loader": "^2.0.0",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.2.1",

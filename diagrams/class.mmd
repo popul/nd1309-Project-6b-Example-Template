@@ -1,0 +1,39 @@
+classDiagram
+    class State {
+        <<enumeration>>
+        Harvested
+        Processed
+        Packed
+        ForSale
+        Sold
+        Shipped
+        Received
+        Purchased
+    }
+    class Item{
+      +uint256 sku
+      +uint256 upc
+      +address ownerID
+      +address originFarmerID
+      +string originFarmName
+      +string originFarmInformation
+      +string originFarmLatitude
+      +string originFarmLongitude
+      +uint256 productID
+      +string productNotes
+      +uint256 productPrice
+      +State itemState
+      +address distributorID
+      +address retailerID
+      +address consumerID
+      +harvestItem(uint256 _upc, address _originFarmerID, string _originFarmName,string _originFarmInformation,string _originFarmLatitude,string _originFarmLongitude,string _productNotes)
+      +processItem(uint256 _upc)
+      +packItem(uint256 _upc)
+      +sellItem(uint256 _upc,uint256 _price)
+      +buyItem(uint256 _upc)
+      +shipItem(uint256 _upc)
+      +receiveItem(uint256 _upc)
+      +purchaseItem(uint256 _upc)
+      +fetchItemBufferOne(uint256 _upc) itemBuffer1
+      +fetchItemBufferTwo(uint256 _upc) itemBuffer2
+    }

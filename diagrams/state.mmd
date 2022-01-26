@@ -1,0 +1,10 @@
+stateDiagram-v2
+    [*] --> Harvested
+    Harvested --> Processed
+    Processed --> Packed
+    Packed --> Sold
+    Sold -->Shipped
+    Shipped --> Received
+    Received --> Purchased
+    Purchased --> [*]
+            

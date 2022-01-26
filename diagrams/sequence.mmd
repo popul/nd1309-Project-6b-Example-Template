@@ -1,0 +1,10 @@
+sequenceDiagram
+    Farmer->>+Item: harvestItem(upc, farmerId,farmerName,farmInfo,farmLat,farmLong,notes)
+    Farmer->>+Item: processItem(upc)
+    Farmer->>+Item: packItem(upc)
+    Farmer->>+Item: sellItem(upc, price)
+    Distributor->>+Item: buyItem(upc, value)
+    Item-->>-Distributor: change
+    Distributor->>+Item: shipItem(upc)
+    Retailer->>+Item: receiveItem(upc)
+    Consumer->>+Item: purchaseItem(upc)

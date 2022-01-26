@@ -1,0 +1,8 @@
+
+graph TD
+    A[Harvest] -->|Item| B[Process]
+    B[Process] -->|UPC| C[Pack]
+    C[Pack] -->|UPC, price| D[Sell]
+    D[Sell] -->|UPC| E[Ship]
+    E[Ship] -->|UPC| F[Receive]
+    F[Receive] -->|UPC| G[Purchase]    
