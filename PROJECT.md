@@ -11,7 +11,7 @@ https://ropsten.etherscan.io/tx/0x59b432042f253eef7860f984a7cdf33a57ed02e2b0a468
 # Dependencies
 
 - Node: v14.15.4
-- Truffle: 4.1.14
+- Truffle 4.1.14: Blockchain development framework, it help me to compile, test and deploy solidity smart contracts.
 - Web3: 1.7.0
 - Node dependencies:
   - Web3 1.7.0 : To communicate with SupplyChain smart contract
